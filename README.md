@@ -1,9 +1,11 @@
 # Basic Jenkins in Docker
 
 > [How to install WSL2](docs/wsl-installation.md)
+
 > [How to install Docker](docs/docker-installation.md)
 
 - Build Jenkins image
+
 Plugins are installed at build time, the list of plugins to install is in the pluginst.txt file. 
 Plugins can also be installed manually.
 
@@ -12,6 +14,7 @@ docker build -t jenkins-basic .
 ```
 
 - Create volume
+
 Volume saves jenkins state
 ```
 docker volume create jenkins-basic
