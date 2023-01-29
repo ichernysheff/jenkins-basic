@@ -1,0 +1,8 @@
+cloudbees-folder:latest
+git-client:latest
+git:latest
+remote-file:latest
+basic-branch-build-strategies:latest
+role-strategy:latest
+ldap:latest
+bootstrap5-api:latest
