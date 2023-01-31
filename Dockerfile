@@ -1,7 +1,7 @@
 FROM    jenkins/jenkins:2.382
 
-ARG     UID=3000
-ARG     GID=3000
+ARG     UID=1000
+ARG     GID=1000
 ARG     JENKINS_HOME_PATH=/home/jenkins
 
 USER    root
