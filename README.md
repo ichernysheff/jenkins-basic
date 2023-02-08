@@ -15,7 +15,7 @@ docker build -t jenkins-basic .
 
 - Run Jenkins
 ```
-docker run --name jenkins-basic restart=always --detach --publish 8080:8080 --volume jenkins-basic:/home/jenkins/data/ jenkins-basic
+docker run --name jenkins-basic --restart=always --detach --publish 8080:8080 --volume jenkins-basic:/home/jenkins/data/ jenkins-basic
 ```
 
 Jenkins runned on _localhost:8080_
