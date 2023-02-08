@@ -13,16 +13,9 @@ Plugins can also be installed manually.
 docker build -t jenkins-basic .
 ```
 
-- Create volume
-
-Volume saves jenkins state
-```
-docker volume create jenkins-basic
-```
-
 - Run Jenkins
 ```
-docker run --name jenkins-basic --detach --rm --publish 8080:8080 --volume jenkins-basic:/home/jenkins/data/ jenkins-basic
+docker run --name jenkins-basic restart=always --detach --publish 8080:8080 --volume jenkins-basic:/home/jenkins/data/ jenkins-basic
 ```
 
 Jenkins runned on _localhost:8080_
